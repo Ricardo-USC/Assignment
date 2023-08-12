@@ -1,9 +1,3 @@
-/* 
-Color pallete. This section defines variables for the color pallete,
-so that we can refer to particular colors by name instead of hexadecimal values.
-This is applied to the 'root' psuedo-element, which just means that these color
-variables are available to be used anywhere in our html document
-*/
 :root {
     --white-font: #FFFFFF;
     --black-font: #000000;
@@ -14,7 +8,6 @@ variables are available to be used anywhere in our html document
     --colour5: #4C1036;
 }
 
-/* Defines the main container size, we are limiting to 72em max and centring in the viewport */
 .main-container {
     max-width: 72em;
     margin: 0 auto;
@@ -22,7 +15,6 @@ variables are available to be used anywhere in our html document
     color: var(--white-font);
 }
 
-/* Here we define the aspects of style of our elements other than their grid layout */
 .banner {
     width: 100%;
     position: relative;
@@ -40,7 +32,7 @@ variables are available to be used anywhere in our html document
 .banner-right {
     width: 80%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Banner1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Banner.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,137 +55,205 @@ variables are available to be used anywhere in our html document
     padding-top: 1em;
 }
 
-.team-member-card {
-    /* TODO: style the card as a column based flexbox with rounded corners */
-    background-color: var(--colour3);
+.intro-blurb-card {
+    font-size: 1.5em;
+    border-radius: 2em;
+    overflow: hidden;
+    padding: 1em;
     display: flex;
-    flex-direction: column;
-    border-radius: 1em;
+    place-items: center;
+    color: var(--colour5);
+}
+
+.evolution-title {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 2em;
+    background-color: var(--colour4);
+}
+
+.image {
+    width: 100%;
+    object-position: center;
+    object-fit: fill;
     overflow: hidden;
 }
 
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.team-member-card-image {
-    width: 100%;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+.image-blurb {
+    padding: 0.5em;
+    background-color: var(--colour3);
+    display: flex;
+    place-items: center;
 }
 
-.team-member-card-blurb {
-    /* TODO: style the blurb with padding */
-    padding: 0.25em;
-}
-
-.our-clients-title {
-    /* TODO: style the 'Our Clients' text font */
-    font-size: 3em;
+.image-blurb-heading {
+    font-size: 2em;
     text-align: center;
-    padding: 1.5em;
-    border-radius: 1em;
-    background-color: var(--colour1);
-    color: var(--colour3);
 }
 
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.client-icon {
-    width: 100%;
+.image-blurb-text {
+    font-size: 1.5em;
+    text-align: center;
 }
 
-/* now we create names for the grid areas for specific elements */
 #banner {
-    /* TODO: give the grid-area a name */
     grid-area: ban;
 }
 
-#teamMemberCard1 {
-    /* TODO: give the grid-area a name */
-    grid-area: tm1;
+#introblurb {
+    grid-area: ib;
 }
 
-#teamMemberCard2 {
-    /* TODO: give the grid-area a name */
-    grid-area: tm2;
+#evolutiontitle {
+    grid-area: evt;
 }
 
-#teamMemberCard3 {
-    /* TODO: give the grid-area a name */
-    grid-area: tm3;
+#image1 {
+    grid-area: im1;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#ourClientsTitle {
-    /* TODO: give the grid-area a name */
-    grid-area: oct;
+#image2 {
+    grid-area: im2;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#clientIcon1 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci1;
+#image3 {
+    grid-area: im3;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#clientIcon2 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci2;
+#image4 {
+    grid-area: im4;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#clientIcon3 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci3;
+#image5 {
+    grid-area: im5;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#clientIcon4 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci4;
+#image6 {
+    grid-area: im6;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#clientIcon5 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci5;
+#imageblurb1 {
+    grid-area: ib1;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
 }
 
-#clientIcon6 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci6;
+#imageblurb2 {
+    grid-area: ib2;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
 }
 
-#clientIcon7 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci7;
+#imageblurb3 {
+    grid-area: ib3;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
 }
 
-#clientIcon8 {
-    /* TODO: give the grid-area a name */
-    grid-area: ci8;
+#imageblurb4 {
+    grid-area: ib4;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
 }
 
-/* Use a flexible layout grid */
+#imageblurb5 {
+    grid-area: ib5;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#imageblurb6 {
+    grid-area: ib6;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
 .main-container {
     display: grid;
     column-gap: 1em;
 }
   
-/* 
-Responsive Layout breakpoints. We start 'mobile-first' i.e. we define how the layout should look
-for the smallest screen sizes. In this case we want a single column that spans the main container.
-Because this CSS definition comes first, it will apply by default. Then we override it below with 
-media queries for progressively bigger screen widths
-*/
 .main-container {
-    /* TODO: setup the grid-template for mobile phone layout */
     grid-template:
-     "ban ban ban ban" minmax(18em, auto)
-     " .   .   .   . " minmax(2em, auto)
-     "tm1 tm1 tm1 tm1" minmax(30em, auto)
-     " .   .   .   . " minmax(2em, auto)
-     "tm2 tm2 tm2 tm2" minmax(30em, auto)
-     " .   .   .   . " minmax(2em, auto)
-     "tm3 tm3 tm3 tm3" minmax(30em, auto)
-     " .   .   .   . " minmax(4em, auto)
-     "oct oct oct oct" minmax(6em, auto)
-     "ci1 ci1 ci2 ci2" minmax(8em, auto)
-     "ci3 ci3 ci4 ci4" minmax(8em, auto)
-     "ci5 ci5 ci6 ci6" minmax(8em, auto)
-     "ci7 ci7 ci8 ci8" minmax(8em, auto)
-     " .   .   .   . " minmax(2em, auto)
+        "ban ban ban ban" minmax(18em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "evt evt evt evt" minmax(8em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib  ib  ib  ib " minmax(28em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib1 ib1 ib1 ib1" minmax(14em, auto)
+        "im1 im1 im1 im1" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib2 ib2 ib2 ib2" minmax(14em, auto)
+        "im2 im2 im2 im2" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib3 ib3 ib3 ib3" minmax(14em, auto)
+        "im3 im3 im3 im3" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib4 ib4 ib4 ib4" minmax(14em, auto)
+        "im4 im4 im4 im4" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib5 ib5 ib5 ib5" minmax(14em, auto)
+        "im5 im5 im5 im5" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib6 ib6 ib6 ib6" minmax(14em, auto)
+        "im6 im6 im6 im6" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
 }
 
 @media (min-width: 40em) {
@@ -215,21 +275,68 @@ media queries for progressively bigger screen widths
         padding-top: 1em;
         text-align: left;
     }
+
+    #imageblurb1 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb2 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+    
+    #imageblurb3 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb4 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+    
+    #imageblurb5 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb6 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+
     .main-container {
-            /* TODO: setup the grid-template for tablet layout */
-            grid-template:
+        grid-template:
             "ban ban ban ban ban ban ban ban" minmax(18em, auto)
             " .   .   .   .   .   .   .   . " minmax(2em, auto)
-            "tm1 tm1 tm1 tm1 tm2 tm2 tm2 tm2" minmax(30em, auto)
+            "evt evt evt evt evt evt evt evt" minmax(8em, auto)
             " .   .   .   .   .   .   .   . " minmax(2em, auto)
-            " .   .  tm3 tm3 tm3 tm3  .   . " minmax(30em, auto)
-            " .   .   .   .   .   .   .   . " minmax(4em, auto)
-            "oct oct oct oct oct oct oct oct" minmax(6em, auto)
+            "ib  ib  ib  ib  ib  ib  ib  ib " minmax(28em, auto)
             " .   .   .   .   .   .   .   . " minmax(2em, auto)
-            "ci1 ci1 ci1 ci1 ci2 ci2 ci2 ci2" minmax(8em, auto)
-            "ci3 ci3 ci3 ci3 ci4 ci4 ci4 ci4" minmax(8em, auto)
-            "ci5 ci5 ci5 ci5 ci6 ci6 ci6 ci6" minmax(8em, auto)
-            "ci7 ci7 ci7 ci7 ci8 ci8 ci8 ci8" minmax(8em, auto)
+            "ib1 ib1 ib1 im1 im1 im1 im1 im1" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im2 im2 im2 im2 im2 ib2 ib2 ib2" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib3 ib3 ib3 im3 im3 im3 im3 im3" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im4 im4 im4 im4 im4 ib4 ib4 ib4" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib5 ib5 ib5 im5 im5 im5 im5 im5" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im6 im6 im6 im6 im6 ib6 ib6 ib6" minmax(24em, auto)
             " .   .   .   .   .   .   .   . " minmax(2em, auto)
     }
 }
@@ -253,17 +360,76 @@ media queries for progressively bigger screen widths
         padding-top: 1em;
         text-align: left;
     }
+    
+    .evolution-title {
+        font-size: 3em;
+    }
+
+    .image-blurb-heading {
+        font-size: 3em;
+    }
+
+    #imageblurb1 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb2 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+    
+    #imageblurb3 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb4 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+    
+    #imageblurb5 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb6 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+
     .main-container {
-        /* TODO: setup the grid-template for desktop layout */
         grid-template:
             "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(22em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-            "tm1 tm1 tm1 tm1 tm2 tm2 tm2 tm2 tm3 tm3 tm3 tm3" minmax(34em, auto)
-            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
-            "oct oct oct oct oct oct oct oct oct oct oct oct" minmax(6em, auto)
+            "evt evt evt evt evt evt evt evt evt evt evt evt" minmax(8em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-            "ci1 ci1 ci1 ci2 ci2 ci2 ci3 ci3 ci3 ci4 ci4 ci4" minmax(8em, auto)
-            "ci5 ci5 ci5 ci6 ci6 ci6 ci7 ci7 ci7 ci8 ci8 ci8" minmax(8em, auto)
+            "ib  ib  ib  ib  ib  ib  ib  ib  ib  ib  ib  ib " minmax(12em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib1 ib1 ib1 ib1 ib1 im1 im1 im1 im1 im1 im1 im1" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im2 im2 im2 im2 im2 im2 im2 ib2 ib2 ib2 ib2 ib2" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib3 ib3 ib3 ib3 ib3 im3 im3 im3 im3 im3 im3 im3" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im4 im4 im4 im4 im4 im4 im4 ib4 ib4 ib4 ib4 ib4" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib5 ib5 ib5 ib5 ib5 im5 im5 im5 im5 im5 im5 im5" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im6 im6 im6 im6 im6 im6 im6 ib6 ib6 ib6 ib6 ib6" minmax(28em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
     }
 }
