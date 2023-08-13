@@ -79,6 +79,15 @@
     overflow: hidden;
 }
 
+.image-reference {
+    display: none;
+}
+
+.image:hover .image-reference {
+    display: block;
+    background-color: var(--colour5);
+}
+
 .image-blurb {
     padding: 0.5em;
     background-color: var(--colour3);
