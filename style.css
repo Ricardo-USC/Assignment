@@ -190,6 +190,46 @@
     overflow: hidden;
 }
 
+#image7 {
+    grid-area: im7;
+
+    width: 100%;
+    position: relative;
+}
+
+#image7_1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url("./images/Image7.1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image7_2 {
+    width: 50%;
+    height: 100%;
+    background-image: url("./images/Image7.2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image8 {
+    grid-area: im8;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/Image8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
 #imageblurb1 {
     grid-area: ib1;
 
@@ -232,6 +272,20 @@
     border-top-left-radius: 2em;
 }
 
+#imageblurb7 {
+    grid-area: ib7;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#imageblurb8 {
+    grid-area: ib8;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
 .main-container {
     display: grid;
     column-gap: 1em;
@@ -256,6 +310,12 @@
         " .   .   .   . " minmax(2em, auto)
         "ib4 ib4 ib4 ib4" minmax(14em, auto)
         "im4 im4 im4 im4" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib7 ib7 ib7 ib7" minmax(14em, auto)
+        "im7 im7 im7 im7" minmax(16em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "ib8 ib8 ib8 ib8" minmax(14em, auto)
+        "im8 im8 im8 im8" minmax(16em, auto)
         " .   .   .   . " minmax(2em, auto)
         "ib5 ib5 ib5 ib5" minmax(14em, auto)
         "im5 im5 im5 im5" minmax(16em, auto)
@@ -327,6 +387,20 @@
         border-top-left-radius: 0em;
     }
 
+    #imageblurb7 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb8 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+
     .main-container {
         grid-template:
             "ban ban ban ban ban ban ban ban" minmax(18em, auto)
@@ -342,6 +416,10 @@
             "ib3 ib3 ib3 im3 im3 im3 im3 im3" minmax(24em, auto)
             " .   .   .   .   .   .   .   . " minmax(2em, auto)
             "im4 im4 im4 im4 im4 ib4 ib4 ib4" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib7 ib7 ib7 im7 im7 im7 im7 im7" minmax(24em, auto)
+            " .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im8 im8 im8 im8 im8 ib8 ib8 ib8" minmax(24em, auto)
             " .   .   .   .   .   .   .   . " minmax(2em, auto)
             "ib5 ib5 ib5 im5 im5 im5 im5 im5" minmax(24em, auto)
             " .   .   .   .   .   .   .   . " minmax(2em, auto)
@@ -427,6 +505,20 @@
         border-top-left-radius: 0em;
     }
 
+    #imageblurb7 {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+    
+    #imageblurb8 {
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
+    }
+
     .main-container {
         grid-template:
             "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(22em, auto)
@@ -442,6 +534,10 @@
             "ib3 ib3 ib3 ib3 ib3 im3 im3 im3 im3 im3 im3 im3" minmax(28em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
             "im4 im4 im4 im4 im4 im4 im4 ib4 ib4 ib4 ib4 ib4" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "ib7 ib7 ib7 ib7 ib7 im7 im7 im7 im7 im7 im7 im7" minmax(28em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "im8 im8 im8 im8 im8 im8 im8 ib8 ib8 ib8 ib8 ib8" minmax(28em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
             "ib5 ib5 ib5 ib5 ib5 im5 im5 im5 im5 im5 im5 im5" minmax(28em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
